@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy2Ride - Login/Signup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/E2R-logo.webp" alt="Easy2Ride Logo">
+      <h1>Easy2Ride</h1>
+      <p>Book. Ride. Repeat.</p>
+    </div>
+  </header>
+
+  <div class="form-container">
+    <!-- Login Form -->
+    <form id="login-form" class="form active">
+      <h2>Login Form</h2>
+      <div class="tab-buttons">
+        <button type="button" class="tab-btn active" onclick="showForm('login')">Login</button>
+        <button type="button" class="tab-btn" onclick="showForm('signup')">Signup</button>
+      </div>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <p><a href="#">Forgot Password?</a></p>
+      <button type="submit" class="form-btn">Login</button>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signup-form" class="form">
+      <h2>Signup Form</h2>
+      <div class="tab-buttons">
+        <button type="button" class="tab-btn" onclick="showForm('login')">Login</button>
+        <button type="button" class="tab-btn active" onclick="showForm('signup')">Signup</button>
+      </div>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="form-btn">Signup</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
