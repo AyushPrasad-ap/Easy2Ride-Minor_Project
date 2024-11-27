@@ -1,0 +1,191 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6d9f3;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f3e6ff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+header .logo {
+  width: 70px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* File Inputs Section */
+.file-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds spacing between the file input groups */
+  margin-bottom: 20px;
+}
+
+.file-input-group {
+  display: flex;
+  justify-content: space-between; /* Ensures label and input are properly aligned */
+  align-items: center;
+  gap: 10px;
+}
+
+.file-input-group label {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.file-input-group input[type="file"] {
+  flex: 2;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Images Section */
+.images-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.images-section .scooty-img {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* Price Section */
+.price-section {
+  background-color: #f3e6ff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.price-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.price-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.price-section table th,
+.price-section table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.price-section table th {
+  background-color: #d4b8ff;
+  color: #333;
+}
+
+.total-row td {
+  font-weight: bold;
+}
+
+/* Book Now Button */
+.book-now-container {
+  display: flex;
+  justify-content: space-around; /* Center-aligns the button */
+  margin-top: 20px;
+}
+
+.book-now {
+  padding: 10px 20px; /* Add some padding */
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+}
+
+.book-now:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Reviews Section */
+.reviews-section {
+  margin-top: 20px;
+}
+
+.reviews-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.review span {
+  background-color: #c7a4ff;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.review p {
+  margin: 0;
+  font-size: 14px;
+}

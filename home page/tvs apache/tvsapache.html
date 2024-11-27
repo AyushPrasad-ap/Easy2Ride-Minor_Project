@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVS Apache RTR 160</title>
+  <link rel="stylesheet" href="tvsapache.css">
+  <script>
+    function validateForm(event) {
+      // Get the form input values
+      const fullName = document.querySelector('input[placeholder="Full name"]').value;
+      const contactNo = document.querySelector('input[placeholder="Contact No."]').value;
+      const email = document.querySelector('input[placeholder="Email ID"]').value;
+      const age = document.getElementById('age').value;
+
+      // Check if any form input is empty
+      if (!fullName || !contactNo || !email || !age) {
+        // Prevent form submission
+        event.preventDefault();
+        // Display alert if any field is empty
+        alert("Please input the details!");
+      } else if (age < 18) {
+        // Prevent form submission if age is less than 18
+        event.preventDefault();
+        // Display alert for age validation
+        alert("You must be 18 or older to apply.");
+      } else {
+        // Show booking success message
+        alert("Booking Successful. You will receive an email shortly!");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TVS Apache RTR 160</h1>
+      <img src="../E2R-logo.svg" alt="Easy2Ride Logo" class="logo">
+    </header>
+    
+    <form onsubmit="validateForm(event)">
+      <div class="input-group">
+        <input type="text" placeholder="Full name" id="full-name">
+        <input type="text" placeholder="Contact No." id="contact-no">
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="Email ID" id="email">
+        <input type="number" id="age" placeholder="Age">
+      </div>
+      <div class="file-input-group">
+        <label for="aadhar">Submit Aadhar Card:</label>
+        <input type="file" id="aadhar">
+        <label for="license">Submit Driving License:</label>
+        <input type="file" id="license">
+      </div>
+      
+      <div class="book-now-container">
+        <button type="submit" class="book-now">Book Now</button>
+      </div>
+    </form>
+    
+    <div class="images-section">
+      <h2></h2>
+      <img src="apache1.webp" alt="Scooty Image" class="scooty-img">
+      <img src="apache2.webp" alt="Scooty Image" class="scooty-img">
+    </div>
+    
+    <div class="price-section">
+      <h3>Price Breakup</h3>
+      <table>
+        <tr>
+          <th>Details</th>
+          <th>Cost</th>
+        </tr>
+        <tr>
+          <td>Mileage (50 km/l)</td>
+          <td>50 Rs</td>
+        </tr>
+        <tr>
+          <td>Petrol Used (2 liters)</td>
+          <td>100 Rs</td>
+        </tr>
+        <tr>
+          <td>Timing (3 hours)</td>
+          <td>30 Rs</td>
+        </tr>
+        <tr>
+          <td>Distance (25 km)</td>
+          <td>20 Rs</td>
+        </tr>
+        <tr class="total-row">
+          <td><b>Total Price:</b></td>
+          <td><b>200 Rs</b></td>
+        </tr>
+      </table>
+    </div>
+    
+    
+    <div class="reviews-section">
+      <h3>Ratings & Reviews</h3>
+      <div class="review">
+        <span>D</span>
+        <p><b>Drake</b><br>The scooty is smooth and the seats are very comfortable. 😊</p>
+      </div>
+      <div class="review">
+        <span>J</span>
+        <p><b>Joey</b><br>The pickup is not that good, and the suspension is way too tight. 😔</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

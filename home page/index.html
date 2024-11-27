@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+  <style>
+    html {
+      scroll-behavior: smooth; /* Enables smooth scrolling for the entire document */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="E2R-logo.svg" alt="Logo">
+      <h1>Welcome Aboard MUJians</h1>
+    </div>
+    <nav>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#help" class="nav-link">Help</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Your One-Stop Solution</h2>
+      <p>Experience seamless service with a user-friendly design and robust functionality.</p>
+      <button class="hero-btn" onclick="document.getElementById('features').scrollIntoView()">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+<section class="features" id="features">
+  <h2>Rent According To Your Needs!</h2>
+  <div class="feature-grid">
+    <a href="activa 6g/activa6g.html" class="feature-item">
+      <img src="activa 6g/activa1.avif" alt="Feature 1">
+      <h3>Honda Activa 6G</h3>
+      <p>*Starts at Rs 120</p>
+    </a>
+    <a href="tvs apache/tvsapache.html" class="feature-item">
+      <img src="tvs apache/apache1.webp" alt="Feature 2">
+      <h3>TVS Apache RTR 160</h3>
+      <p>*Starts at Rs 350</p>
+    </a>
+    <a href="tvs jupiter/tvsjupiter.html" class="feature-item">
+      <img src="tvs jupiter/tvs1.avif" alt="Feature 3">
+      <h3>TVS Jupiter</h3>
+      <p>*Starts at Rs 150</p>
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
